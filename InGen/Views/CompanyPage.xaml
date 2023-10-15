@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodel ="clr-namespace:InGen.ViewModels"
+             x:DataType="viewmodel: CompanyViewModel"
+             x:Class="InGen.Views.CompanyPage"
+             Title="Company Page"
+             BackgroundColor="#4b438e">
+
+    <VerticalStackLayout
+        Spacing="10">
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="Company Name"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=Name}"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="NameEntry"/>
+        </Grid>
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label 
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="Address"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=Address}"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="AddressEntry"/>
+        </Grid>
+
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label 
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="City"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=City}"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="CityEntry"/>
+        </Grid>
+
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="State Code"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=State}"
+                TextTransform="Uppercase"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="StateEntry"
+                MaxLength="2"/>
+        </Grid>
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="ZipCode"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=ZipCode}"
+                Keyboard="Numeric"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="ZipCodeEntry"/>
+        </Grid>
+
+
+        <Grid
+            ColumnDefinitions="200, 550"
+            HeightRequest="40"
+            Margin="20">
+            <Label 
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="Sales Tax Rate"/>
+            <Entry
+                Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=Tax}"
+                Keyboard="Numeric"
+                BackgroundColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="Quattrocento-Bold.ttf"
+                Grid.Column="1"
+                x:Name="TaxEntry">
+                <Entry.Behaviors>
+                    <toolkit:NumericValidationBehavior
+                        MaximumDecimalPlaces="3"
+                        MinimumValue="0.0"
+                        MaximumValue="100.0"/>
+                </Entry.Behaviors>
+            </Entry>
+        </Grid>
+
+        <Button
+            Style="{StaticResource CustomButtonStyle}"
+            Margin="0,50,0,0"
+            Text="Update"
+            FontAttributes="Bold"
+            FontSize="20"
+            x:Name="UpdateBtn"
+            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=UpdateCompanyCommand}"
+            WidthRequest="400"
+            HeightRequest="60"/>
+
+        <!--<Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.Name}"/>
+        <Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.Address}"/>
+        <Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.City}"/>
+        <Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.State}"/>
+        <Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.ZipCode}"/>
+        <Label 
+                Style="{StaticResource MyDefaultLabelStyle}"
+                Text="{Binding company.Tax}"/>-->
+
+    </VerticalStackLayout>
+</ContentPage>

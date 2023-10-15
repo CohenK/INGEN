@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InGen
+build_property.ProjectDir = C:\Users\cohen\source\repos\INGEN\InGen\
+
+[C:/Users/cohen/source/repos/INGEN/InGen/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Resources/Styles/InGenStylesDictionary.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Resources.Styles.InGenStylesDictionary.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\InGenStylesDictionary.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\InGenStylesDictionary.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Views/CompanyPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Views.CompanyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CompanyPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CompanyPage.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Views/InventoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Views.InventoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InventoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InventoryPage.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Views/InvoicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Views.InvoicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InvoicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InvoicePage.xaml
+
+[C:/Users/cohen/source/repos/INGEN/InGen/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InGen.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <LinearGradientBrush
+                x:Key="BorderGradient"
+                StartPoint="0,0"
+                EndPoint="0,1">
+        <GradientStop Color="Gold"
+                              Offset="0.5" />
+        <GradientStop Color="#f0fb7b"
+                              Offset="0" />
+        <GradientStop Color="#ffab00"
+                              Offset="1" />
+    </LinearGradientBrush>
+
+    <Style 
+        x:Key="CustomButtonStyle" 
+        TargetType="Button">
+        <Setter
+            Property="BackgroundColor"
+            Value="#4cb19f"/>
+        <Setter
+            Property="TextColor"
+            Value="#25207a"/>
+        <Setter
+            Property="FontAttributes"
+            Value="Bold"/>
+        <Setter
+            Property="FontSize"
+            Value="20"/>
+    </Style>
+
+    <LinearGradientBrush
+        x:Key="FrontPageBorderBGInvoice"
+        StartPoint="1,1"
+        EndPoint="0,0">
+        <GradientStop Color="#3e2579"
+                      Offset="0.1" />
+        <GradientStop Color="#25207a"
+                      Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush
+        x:Key="FrontPageBorderBGInventory"
+        StartPoint="0,1"
+        EndPoint="0,0">
+        <GradientStop Color="#3e2579"
+                      Offset="0.1" />
+        <GradientStop Color="#25207a"
+                      Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush
+        x:Key="FrontPageBorderBGCompany"
+        StartPoint="0,1"
+        EndPoint="1,0">
+        <GradientStop Color="#3e2579"
+                      Offset="0.1" />
+        <GradientStop Color="#25207a"
+                      Offset="1.0" />
+    </LinearGradientBrush>
+
+    <Style 
+        x:Key="DefaultLabelStyle" 
+        TargetType="Label">
+        <Setter
+            Property="TextColor"
+            Value="White"/>
+        <Setter
+            Property="FontSize"
+            Value="20"/>
+        <Setter
+            Property="FontAttributes"
+            Value="Bold"/>
+        <Setter
+            Property="FontFamily"
+            Value="Quattrocento-Bold"/>
+        <Setter
+            Property="HorizontalOptions"
+            Value="Center"/>
+        <Setter
+            Property="VerticalOptions"
+            Value="Center"/>
+    </Style>
+
+</ResourceDictionary>

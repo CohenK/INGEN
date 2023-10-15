@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel ="clr-namespace:InGen.ViewModels"
+             x:DataType="viewmodel: FrontPageViewModel"
+             x:Class="InGen.MainPage"
+             Title="FrontPage"
+             BackgroundColor="#4b438e"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <Border
+                Stroke="{StaticResource BorderGradient}"
+                StrokeThickness="5"
+                StrokeShape="RoundRectangle 200,0,0,200"
+                HeightRequest="600"
+                WidthRequest="1400">
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                Spacing="30">
+
+                <Label
+                    Text="Invoice Generator"
+                    TextDecorations="Underline"
+                    TextColor="White"
+                    FontFamily="Quattrocento-Bold.ttf"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    FontSize="65"/>
+
+                <HorizontalStackLayout
+                    Spacing="40"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Border
+                        Stroke ="White"
+                        StrokeThickness="3"
+                        WidthRequest="350"
+                        Background="{StaticResource FrontPageBorderBGCompany}">
+                        <Grid
+                            RowDefinitions="100,120, 50"
+                            Margin="10">
+                            <Label
+                                Grid.Row="0"
+                                FontFamily="Icons"
+                                Text="&#xF0F7;"
+                                TextColor="White"
+                                HorizontalTextAlignment="Center"
+                                FontSize="80"/>
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Text="Navigate to the edit company page to change your company's information"
+                                FontFamily="Quattrocento-Bold.ttf"
+                                FontSize="20"
+                                TextColor="White"
+                                Margin="5"
+                                HorizontalTextAlignment="Center"/>
+                            <Button
+                                Grid.Row="2"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Text="Company"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                x:Name="CompanyEditBtn"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:FrontPageViewModel}}, Path=CompanyPageCommand}"
+                                WidthRequest="150"
+                                HeightRequest="50"
+                                VerticalOptions="End"
+                                Margin="0,0,0,20"/>
+                        </Grid>
+                    </Border>
+
+                    <Border
+                        Stroke ="White"
+                        StrokeThickness="3"
+                        WidthRequest="350"
+                        Background="{StaticResource FrontPageBorderBGInventory}">
+                        <Grid
+                            RowDefinitions="100,120, 50"
+                            Margin="10">
+                            <Label
+                                Grid.Row="0"
+                                FontFamily="Icons"
+                                Text="&#xF0C9;"
+                                TextColor="White"
+                                HorizontalTextAlignment="Center"
+                                FontSize="80"/>
+                            <Label
+                                Grid.Row="1"
+                                Text="Navigate to your inventory page to add and edit items/services that you offer"
+                                FontFamily="Quattrocento-Bold.ttf"
+                                FontSize="20"
+                                TextColor="White"
+                                Margin="5"
+                                HorizontalTextAlignment="Center"/>
+                            <Button
+                                Grid.Row="2"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Text="Inventory"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                x:Name="AddEditItemBtn"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:FrontPageViewModel}}, Path=InventoryPageCommand}"
+                                WidthRequest="150"
+                                HeightRequest="50"
+                                VerticalOptions="End"
+                                Margin="0,0,0,20"/>
+                        </Grid>
+                    </Border>
+
+                    <Border
+                        Stroke ="White"
+                        StrokeThickness="3"
+                        WidthRequest="350"
+                        Background="{StaticResource FrontPageBorderBGInvoice}">
+                        <Grid
+                            RowDefinitions="100,120, 50"
+                            Margin="10">
+                            <Label
+                                Grid.Row="0"
+                                FontFamily="Icons"
+                                Text="&#xE800;"
+                                TextColor="White"
+                                HorizontalTextAlignment="Center"
+                                FontSize="80"/>
+                            <Label
+                                Grid.Row="1"
+                                Text="Navigate to the invoice page to generate a pdf invoice for your customers' orders"
+                                FontFamily="Quattrocento-Bold.ttf"
+                                FontSize="20"
+                                TextColor="White"
+                                Margin="5"
+                                HorizontalTextAlignment="Center"/>
+                            <Button
+                                Grid.Row="2"
+                                Style="{StaticResource CustomButtonStyle}"
+                                Text="Invoice"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                x:Name="InvoiceCreationBtn"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:FrontPageViewModel}}, Path=InvoicePageCommand}"
+                                WidthRequest="150"
+                                HeightRequest="50"
+                                VerticalOptions="End"
+                                Margin="0,0,0,20"/>
+                        </Grid>
+                    </Border>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+
+</ContentPage>

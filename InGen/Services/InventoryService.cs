@@ -1,0 +1,34 @@
+﻿using SQLite;
+
+namespace InGen.Services
+{
+    public static class InventoryService
+    {
+        static SQLiteAsyncConnection db;
+        public static async Task Init()
+        {
+            if (db != null) return;
+            var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen","Inventory.db");
+            db = new SQLiteAsyncConnection(databasePath);
+
+            await db.CreateTableAsync<Item>();
+        }
+
+        public static async Task AddItem(Item item)
+        {
+            await Init();
+            await db.InsertAsync(item);
+        }
+        public static async Task RemoveItem(int id)
+        {
+            await Init();
+            await db.DeleteAsync<Item>(id);
+        }
+        public static async Task<IEnumerable<Item>> GetItems()
+        {
+            await Init();
+            var ItemList = await db.Table<Item>().ToListAsync();
+            return ItemList;
+        }
+    }
+}

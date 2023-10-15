@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:InGen.ViewModels"
+             x:DataType="viewmodel: InventoryViewModel"
+             x:Class="InGen.Views.InventoryPage"
+             Title="Inventory Page"
+             BackgroundColor="#4b438e">
+
+    <Grid
+        ColumnDefinitions="*, 650">
+
+        <CollectionView
+            Grid.Column="0">
+            
+        </CollectionView>
+        <VerticalStackLayout
+            Margin="0,30,30,0"
+            Grid.Column="1"
+            Spacing="45">
+            <Grid
+                ColumnDefinitions="200,*">
+                <Label
+                    Style="{StaticResource DefaultLabelStyle}"
+                    HorizontalOptions="Start"
+                    Text="Item Name"/>
+                <Entry
+                    Grid.Column="1"
+                    x:Name="ItemNameEntry"
+                    BackgroundColor="White"/>
+            </Grid>
+
+            <Grid
+                ColumnDefinitions="200,*">
+                <Label
+                    Style="{StaticResource DefaultLabelStyle}"
+                    HorizontalOptions="Start"
+                    Text="Item Description"/>
+                <Entry
+                    Grid.Column="1"
+                    x:Name="ItemDescriptionEntry"
+                    BackgroundColor="White"/>
+            </Grid>
+
+            <Grid
+                ColumnDefinitions="200,*">
+                <Label
+                    Style="{StaticResource DefaultLabelStyle}"
+                    HorizontalOptions="Start"
+                    Text="Unit Measurement"/>
+                <Entry
+                    Grid.Column="1"
+                    x:Name="UnitMeasurementEntry"
+                    BackgroundColor="White"/>
+            </Grid>
+
+            <Grid
+                ColumnDefinitions="200,*">
+                <Label
+                    Style="{StaticResource DefaultLabelStyle}"
+                    HorizontalOptions="Start"
+                    Text="Unit Cost"/>
+                <Entry
+                    Grid.Column="1"
+                    x:Name="UnitCostEntry"
+                    BackgroundColor="White"/>
+            </Grid>
+
+            <VerticalStackLayout
+                Spacing="15">
+                <Button
+                x:Name="ItemUpdateBtn"
+                Text="Update Item"
+                Style="{StaticResource CustomButtonStyle}"
+                HeightRequest="50"
+                Clicked="ItemUpdateBtn_Clicked"/>
+
+                <Button
+                x:Name="ItemAddBtn"
+                Text="Add Item"
+                Style="{StaticResource CustomButtonStyle}"
+                HeightRequest="50"
+                Clicked="ItemAddBtn_Clicked"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
