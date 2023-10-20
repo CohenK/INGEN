@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:InGen.ViewModels"
+             xmlns:model="clr-namespace:InGen.Models"
              x:DataType="viewmodel: InventoryViewModel"
              x:Class="InGen.Views.InventoryPage"
              Title="Inventory Page"
-             BackgroundColor="#4b438e">
+             Style="{StaticResource CustomContentPage}">
 
     <Grid
         ColumnDefinitions="*, 650">
 
-        <CollectionView
-            Grid.Column="0">
-            
-        </CollectionView>
+        <Border
+                Stroke="{StaticResource BorderGradient}"
+                StrokeThickness="5"
+                Margin="30">
+            <CollectionView
+            Grid.Column="0"
+            ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Item">
+                        <Grid
+                            Padding="10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=PopulateFieldsCommand}"/>
+                            </Grid.GestureRecognizers>
+                            <Border
+                                Padding="10">
+                                <Grid
+                                    ColumnDefinitions="180, *, 150"
+                                    ColumnSpacing="15"
+                                    HeightRequest="30">
+                                    <Label
+                                        Grid.Column="0"
+                                        HorizontalOptions="Start"
+                                        HeightRequest="30"
+                                        LineBreakMode="TailTruncation"
+                                        Style="{StaticResource DefaultLabelStyle}"
+                                        Text="{Binding name}"/>
+                                    <Label
+                                        Grid.Column="1"
+                                        HorizontalOptions="Start"
+                                        HeightRequest="30"
+                                        LineBreakMode="TailTruncation"
+                                        Style="{StaticResource DefaultLabelStyle}"
+                                        Text="{Binding description}"/>
+                                    <Label
+                                        Grid.Column="2"
+                                        HorizontalOptions="Start"
+                                        HeightRequest="30"
+                                        Style="{StaticResource DefaultLabelStyle}">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat='{}{0:C2}/{1}'>
+                                                <Binding Path="unitPrice"/>
+                                                <Binding Path="unitName"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+
         <VerticalStackLayout
             Margin="0,30,30,0"
             Grid.Column="1"
-            Spacing="45">
+            Spacing="35">
             <Grid
                 ColumnDefinitions="200,*">
                 <Label
@@ -27,19 +79,23 @@
                 <Entry
                     Grid.Column="1"
                     x:Name="ItemNameEntry"
-                    BackgroundColor="White"/>
+                    BackgroundColor="White"
+                    Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=Name}"/>
             </Grid>
 
             <Grid
-                ColumnDefinitions="200,*">
+                ColumnDefinitions="200,*"
+                RowDefinitions="20,100">
                 <Label
                     Style="{StaticResource DefaultLabelStyle}"
                     HorizontalOptions="Start"
                     Text="Item Description"/>
-                <Entry
+                <Editor
                     Grid.Column="1"
+                    Grid.RowSpan="2"
                     x:Name="ItemDescriptionEntry"
-                    BackgroundColor="White"/>
+                    BackgroundColor="White"
+                    Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=Description}"/>
             </Grid>
 
             <Grid
@@ -51,7 +107,8 @@
                 <Entry
                     Grid.Column="1"
                     x:Name="UnitMeasurementEntry"
-                    BackgroundColor="White"/>
+                    BackgroundColor="White"
+                    Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=UnitName}"/>
             </Grid>
 
             <Grid
@@ -63,24 +120,45 @@
                 <Entry
                     Grid.Column="1"
                     x:Name="UnitCostEntry"
-                    BackgroundColor="White"/>
+                    BackgroundColor="White"
+                    Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=UnitPrice}"/>
             </Grid>
 
             <VerticalStackLayout
                 Spacing="15">
+                <Grid
+                    ColumnSpacing="5"
+                    ColumnDefinitions="*,*">
+                    <Button
+                        Grid.Column="0"
+                        x:Name="ItemAddBtn"
+                        Text="Add Item"
+                        Style="{StaticResource CustomButtonStyle}"
+                        HeightRequest="50"
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=AddItemCommand}"/>
+                    <Button
+                        Grid.Column="1"
+                        x:Name="ItemUpdateBtn"
+                        Text="Update Item"
+                        Style="{StaticResource CustomButtonStyle}"
+                        HeightRequest="50"
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=EditItemCommand}"/>
+                </Grid>
                 <Button
-                x:Name="ItemUpdateBtn"
-                Text="Update Item"
+                x:Name="ItemRemoveBtn"
+                Text="Remove Item"
                 Style="{StaticResource CustomButtonStyle}"
                 HeightRequest="50"
-                Clicked="ItemUpdateBtn_Clicked"/>
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=RemoveItemCommand}"/>
+                <Button
+                x:Name="ClearFieldsBtn"
+                Text="Clear Fields"
+                Style="{StaticResource CustomButtonStyle}"
+                HeightRequest="50"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=ClearFieldsCommand}"/>
 
-                <Button
-                x:Name="ItemAddBtn"
-                Text="Add Item"
-                Style="{StaticResource CustomButtonStyle}"
-                HeightRequest="50"
-                Clicked="ItemAddBtn_Clicked"/>
+                <Label
+                    Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=Id}"/>
             </VerticalStackLayout>
 
         </VerticalStackLayout>

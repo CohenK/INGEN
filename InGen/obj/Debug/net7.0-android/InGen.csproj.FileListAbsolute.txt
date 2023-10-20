@@ -1045,3 +1045,11 @@ C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\stamp\_ConvertR
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLite-net.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.core.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.nativelibrary.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll

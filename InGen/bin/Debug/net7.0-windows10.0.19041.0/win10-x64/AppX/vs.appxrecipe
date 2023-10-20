@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-02T01:28:10.226</Modified>
+      <Modified>2023-10-20T03:45:32.813</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-02T01:28:09.941</Modified>
+      <Modified>2023-10-20T03:34:00.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.runtimeconfig.json">
       <PackagePath>InGen.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-02T01:02:36.801</Modified>
+      <Modified>2023-10-17T22:14:28.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.dll">
       <PackagePath>InGen.dll</PackagePath>
-      <Modified>2023-10-02T01:28:09.117</Modified>
+      <Modified>2023-10-20T03:45:31.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>InGen.exe</PackagePath>
-      <Modified>2023-10-02T01:28:09.122</Modified>
+      <Modified>2023-10-20T03:45:31.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -805,13 +805,13 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2022-11-16T01:34:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\communitytoolkit.maui\5.3.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\communitytoolkit.maui\6.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
       <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
-      <Modified>2023-08-09T08:31:12.000</Modified>
+      <Modified>2023-09-26T07:50:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\communitytoolkit.maui.core\5.3.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\communitytoolkit.maui.core\6.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
-      <Modified>2023-08-09T08:31:16.000</Modified>
+      <Modified>2023-09-26T07:50:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll">
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
@@ -959,7 +959,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.deps.json">
       <PackagePath>InGen.deps.json</PackagePath>
-      <Modified>2023-10-02T01:28:10.118</Modified>
+      <Modified>2023-10-20T03:45:32.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

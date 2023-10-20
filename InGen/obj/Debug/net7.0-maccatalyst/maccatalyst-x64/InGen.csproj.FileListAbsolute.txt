@@ -263,3 +263,9 @@ C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-maccatalyst\maccatalyst
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\InGen.pdb
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\InGen.genruntimeconfig.cache
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\InGen.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.nativelibrary.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "v2TiCiNGXwHP8dn5Hz8+4MHC8HOoAgCamvvS1jPO1b7F9/IIWzsUvPThsQyR3CBUOf6U/OWxXklW2aqKvyDWqA==",
+  "dgSpecHash": "GFC5Kv2yVFWStaBMCgWUulT4G4cffdj9hSZ5GPkB/oW7fAsON9zTUa0ow9rgkpToWz74jnQL7sUyH4jGdPJEpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui\\5.3.0\\communitytoolkit.maui.5.3.0.nupkg.sha512",
-    "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui.core\\5.3.0\\communitytoolkit.maui.core.5.3.0.nupkg.sha512",
+    "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui\\6.0.0\\communitytoolkit.maui.6.0.0.nupkg.sha512",
+    "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui.core\\6.0.0\\communitytoolkit.maui.core.6.0.0.nupkg.sha512",
     "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\cohen\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\cohen\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

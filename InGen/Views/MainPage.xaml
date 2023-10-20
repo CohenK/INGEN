@@ -5,7 +5,7 @@
              x:DataType="viewmodel: FrontPageViewModel"
              x:Class="InGen.MainPage"
              Title="FrontPage"
-             BackgroundColor="#4b438e"
+             Style="{StaticResource CustomContentPage}"
              NavigationPage.HasNavigationBar="False">
 
     <VerticalStackLayout

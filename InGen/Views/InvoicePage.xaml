@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InGen.Views.InvoicePage"
              Title="Invoice Page"
-             BackgroundColor="#4b438e">
+             Style="{StaticResource CustomContentPage}">
 
 </ContentPage>

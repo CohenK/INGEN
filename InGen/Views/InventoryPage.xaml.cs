@@ -2,18 +2,14 @@ namespace InGen.Views;
 
 public partial class InventoryPage : ContentPage
 {
-	public InventoryPage()
+    public InventoryPage(InventoryViewModel VM)
 	{
 		InitializeComponent();
+        BindingContext = VM;
 	}
-
-    private void ItemUpdateBtn_Clicked(object sender, EventArgs e)
-    {
-
-    }
-
-    private void ItemAddBtn_Clicked(object sender, EventArgs e)
-    {
-
-    }
+    protected async override void OnAppearing()
+	{
+		base.OnAppearing();
+		await (BindingContext as InventoryViewModel).GetItems();
+	}
 }

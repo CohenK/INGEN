@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net7.0-android33.0": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -18,7 +18,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -2072,10 +2072,10 @@
       }
     },
     "net7.0-android33.0/android-arm": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -2088,7 +2088,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -4142,10 +4142,10 @@
       }
     },
     "net7.0-android33.0/android-arm64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -4158,7 +4158,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -6212,10 +6212,10 @@
       }
     },
     "net7.0-android33.0/android-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -6228,7 +6228,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -8282,10 +8282,10 @@
       }
     },
     "net7.0-android33.0/android-x86": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -8298,7 +8298,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -10352,10 +10352,10 @@
       }
     },
     "net7.0-android33.0/iossimulator-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -10368,7 +10368,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -12422,10 +12422,10 @@
       }
     },
     "net7.0-android33.0/maccatalyst-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -12438,7 +12438,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -14492,10 +14492,10 @@
       }
     },
     "net7.0-android33.0/win10-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
@@ -14508,7 +14508,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
@@ -16562,10 +16562,10 @@
       }
     },
     "net7.0-ios16.1": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -16578,7 +16578,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -16919,10 +16919,10 @@
       }
     },
     "net7.0-ios16.1/android-arm": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -16935,7 +16935,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -17225,10 +17225,10 @@
       }
     },
     "net7.0-ios16.1/android-arm64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -17241,7 +17241,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -17531,10 +17531,10 @@
       }
     },
     "net7.0-ios16.1/android-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -17547,7 +17547,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -17837,10 +17837,10 @@
       }
     },
     "net7.0-ios16.1/android-x86": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -17853,7 +17853,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -18143,10 +18143,10 @@
       }
     },
     "net7.0-ios16.1/iossimulator-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -18159,7 +18159,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -18446,10 +18446,10 @@
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -18462,7 +18462,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -18749,10 +18749,10 @@
       }
     },
     "net7.0-ios16.1/win10-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
@@ -18765,7 +18765,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
@@ -19055,10 +19055,10 @@
       }
     },
     "net7.0-maccatalyst16.1": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -19071,7 +19071,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -19412,10 +19412,10 @@
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -19428,7 +19428,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -19718,10 +19718,10 @@
       }
     },
     "net7.0-maccatalyst16.1/android-arm64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -19734,7 +19734,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -20024,10 +20024,10 @@
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -20040,7 +20040,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -20330,10 +20330,10 @@
       }
     },
     "net7.0-maccatalyst16.1/android-x86": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -20346,7 +20346,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -20636,10 +20636,10 @@
       }
     },
     "net7.0-maccatalyst16.1/iossimulator-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -20652,7 +20652,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -20939,10 +20939,10 @@
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -20955,7 +20955,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -21242,10 +21242,10 @@
       }
     },
     "net7.0-maccatalyst16.1/win10-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
@@ -21258,7 +21258,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
@@ -21548,10 +21548,10 @@
       }
     },
     "net7.0-windows10.0.19041": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -21564,7 +21564,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -22068,10 +22068,10 @@
       }
     },
     "net7.0-windows10.0.19041/android-arm": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -22084,7 +22084,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -22503,10 +22503,10 @@
       }
     },
     "net7.0-windows10.0.19041/android-arm64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -22519,7 +22519,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -22938,10 +22938,10 @@
       }
     },
     "net7.0-windows10.0.19041/android-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -22954,7 +22954,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -23373,10 +23373,10 @@
       }
     },
     "net7.0-windows10.0.19041/android-x86": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -23389,7 +23389,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -23808,10 +23808,10 @@
       }
     },
     "net7.0-windows10.0.19041/iossimulator-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -23824,7 +23824,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -24240,10 +24240,10 @@
       }
     },
     "net7.0-windows10.0.19041/maccatalyst-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -24256,7 +24256,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -24672,10 +24672,10 @@
       }
     },
     "net7.0-windows10.0.19041/win10-x64": {
-      "CommunityToolkit.Maui/5.3.0": {
+      "CommunityToolkit.Maui/6.0.0": {
         "type": "package",
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "5.3.0"
+          "CommunityToolkit.Maui.Core": "6.0.0"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -24688,7 +24688,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/5.3.0": {
+      "CommunityToolkit.Maui.Core/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Speech": "7.0.0"
@@ -25114,10 +25114,10 @@
     }
   },
   "libraries": {
-    "CommunityToolkit.Maui/5.3.0": {
-      "sha512": "vzZzhVp7o+ipkW/zT6ZXst2mJemPrzGsO5Dbw3NoMpRhn0LapS0tmmegGAuv6AlcUM8/JROr7rF2J+t/LgLMqQ==",
+    "CommunityToolkit.Maui/6.0.0": {
+      "sha512": "Pffh+cX5qA1DxecPOt2Zs2YVx3O1WQNQUV3Frbesoc6VWz7MJq3sQhN3emOqr7/ATvvTv7r8lqEYGduHtiNsgA==",
       "type": "package",
-      "path": "communitytoolkit.maui/5.3.0",
+      "path": "communitytoolkit.maui/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -25125,7 +25125,7 @@
         "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
         "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
         "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
-        "communitytoolkit.maui.5.3.0.nupkg.sha512",
+        "communitytoolkit.maui.6.0.0.nupkg.sha512",
         "communitytoolkit.maui.nuspec",
         "icon.png",
         "lib/net7.0-android33.0/CommunityToolkit.Maui.aar",
@@ -25143,15 +25143,15 @@
         "lib/net7.0/CommunityToolkit.Maui.xml"
       ]
     },
-    "CommunityToolkit.Maui.Core/5.3.0": {
-      "sha512": "fy7jBKU3uxWFXXUeLZ3NnZOQgxZ6CdiGJNXLEUnt8T5Bsnp2/Vlwl6TAGf3q4B1ToJUNLJOMoGxaRP25ktevSQ==",
+    "CommunityToolkit.Maui.Core/6.0.0": {
+      "sha512": "crumJ4LAic/AUeG9gOkddaoAIR19iIq0u7kpugn1etsXMS3jr1vS/lIee5KFRUBL36ijSEzE0bGLAkCIaw9aSg==",
       "type": "package",
-      "path": "communitytoolkit.maui.core/5.3.0",
+      "path": "communitytoolkit.maui.core/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ReadMe.txt",
-        "communitytoolkit.maui.core.5.3.0.nupkg.sha512",
+        "communitytoolkit.maui.core.6.0.0.nupkg.sha512",
         "communitytoolkit.maui.core.nuspec",
         "icon.png",
         "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.aar",
@@ -28645,7 +28645,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
-      "CommunityToolkit.Maui >= 5.3.0",
+      "CommunityToolkit.Maui >= 6.0.0",
       "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -28667,7 +28667,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net7.0-ios16.1": [
-      "CommunityToolkit.Maui >= 5.3.0",
+      "CommunityToolkit.Maui >= 6.0.0",
       "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -28678,7 +28678,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net7.0-maccatalyst16.1": [
-      "CommunityToolkit.Maui >= 5.3.0",
+      "CommunityToolkit.Maui >= 6.0.0",
       "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -28689,7 +28689,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net7.0-windows10.0.19041": [
-      "CommunityToolkit.Maui >= 5.3.0",
+      "CommunityToolkit.Maui >= 6.0.0",
       "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -28766,7 +28766,7 @@
         "dependencies": {
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[6.0.0, )"
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
@@ -28896,7 +28896,7 @@
         "dependencies": {
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[6.0.0, )"
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
@@ -28971,7 +28971,7 @@
         "dependencies": {
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[6.0.0, )"
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
@@ -29047,7 +29047,7 @@
         "dependencies": {
           "CommunityToolkit.Maui": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[6.0.0, )"
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",

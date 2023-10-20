@@ -16,6 +16,14 @@
                               Offset="1" />
     </LinearGradientBrush>
 
+    <Style
+        x:Key="CustomContentPage"
+        TargetType="ContentPage">
+        <Setter
+            Property="BackgroundColor"
+            Value="#4b438e"/>
+    </Style>
+
     <Style 
         x:Key="CustomButtonStyle" 
         TargetType="Button">

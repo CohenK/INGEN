@@ -6,7 +6,7 @@
              x:DataType="viewmodel: CompanyViewModel"
              x:Class="InGen.Views.CompanyPage"
              Title="Company Page"
-             BackgroundColor="#4b438e">
+             Style="{StaticResource CustomContentPage}">
 
     <VerticalStackLayout
         Spacing="10">

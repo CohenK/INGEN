@@ -4,6 +4,115 @@
         <name>InGen</name>
     </assembly>
     <members>
+        <member name="T:InGen.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:InGen.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:InGen.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:InGen.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:InGen.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="T:InGen.ViewModels.CompanyViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.Name">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.name"/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.Address">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.address"/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.City">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.city"/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.State">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.state"/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.ZipCode">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.zipCode"/>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.Tax">
+            <inheritdoc cref="F:InGen.ViewModels.CompanyViewModel.tax"/>
+        </member>
+        <member name="F:InGen.ViewModels.CompanyViewModel.updateCompanyCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.CompanyViewModel.UpdateCompanyCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.CompanyViewModel.UpdateCompanyCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.CompanyViewModel.UpdateCompany"/>.</summary>
+        </member>
+        <member name="T:InGen.ViewModels.FrontPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:InGen.ViewModels.FrontPageViewModel.companyPageCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.FrontPageViewModel.CompanyPageCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.FrontPageViewModel.CompanyPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.FrontPageViewModel.CompanyPage"/>.</summary>
+        </member>
+        <member name="F:InGen.ViewModels.FrontPageViewModel.inventoryPageCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.FrontPageViewModel.InventoryPageCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.FrontPageViewModel.InventoryPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.FrontPageViewModel.InventoryPage"/>.</summary>
+        </member>
+        <member name="F:InGen.ViewModels.FrontPageViewModel.invoicePageCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.FrontPageViewModel.InvoicePageCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.FrontPageViewModel.InvoicePageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.FrontPageViewModel.InvoicePage"/>.</summary>
+        </member>
+        <member name="T:InGen.ViewModels.InventoryViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.Name">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.name"/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.Description">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.description"/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.UnitName">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.unitName"/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.UnitPrice">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.unitPrice"/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.Id">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.id"/>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.Items">
+            <inheritdoc cref="F:InGen.ViewModels.InventoryViewModel.items"/>
+        </member>
+        <member name="F:InGen.ViewModels.InventoryViewModel.populateFieldsCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.InventoryViewModel.PopulateFieldsCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.PopulateFieldsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:InGen.ViewModels.InventoryViewModel.PopulateFields(InGen.Models.Item)"/>.</summary>
+        </member>
+        <member name="F:InGen.ViewModels.InventoryViewModel.addItemCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.InventoryViewModel.AddItemCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.AddItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.InventoryViewModel.AddItem"/>.</summary>
+        </member>
+        <member name="F:InGen.ViewModels.InventoryViewModel.editItemCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.InventoryViewModel.EditItemCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.EditItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.InventoryViewModel.EditItem"/>.</summary>
+        </member>
+        <member name="F:InGen.ViewModels.InventoryViewModel.removeItemCommand">
+            <summary>The backing field for <see cref="P:InGen.ViewModels.InventoryViewModel.RemoveItemCommand"/>.</summary>
+        </member>
+        <member name="P:InGen.ViewModels.InventoryViewModel.RemoveItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InGen.ViewModels.InventoryViewModel.RemoveItem"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -102,6 +211,99 @@
             <param name = "length">The duration, in milliseconds, of the animation</param>
             <param name = "easing">The easing function to be used in the animation</param>
             <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.City">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "City" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.State">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "State" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ZipCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ZipCode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tax">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tax" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UnitName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UnitName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UnitPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UnitPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.City">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "City" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.State">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "State" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ZipCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ZipCode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tax">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tax" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UnitName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UnitName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UnitPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UnitPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
         </member>
     </members>
 </doc>
