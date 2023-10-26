@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:InGen.ViewModels"
              xmlns:model="clr-namespace:InGen.Models"
-             x:DataType="viewmodel: InventoryViewModel"
+             x:DataType="viewmodel: InvoiceViewModel"
              x:Class="InGen.Views.InventoryPage"
              Title="Inventory Page"
              Style="{StaticResource CustomContentPage}">
@@ -35,6 +34,7 @@
                                     <Label
                                         Grid.Column="0"
                                         HorizontalOptions="Start"
+                                        VerticalOptions="Center"
                                         HeightRequest="30"
                                         LineBreakMode="TailTruncation"
                                         Style="{StaticResource DefaultLabelStyle}"
@@ -42,6 +42,7 @@
                                     <Label
                                         Grid.Column="1"
                                         HorizontalOptions="Start"
+                                        VerticalOptions="Center"
                                         HeightRequest="30"
                                         LineBreakMode="TailTruncation"
                                         Style="{StaticResource DefaultLabelStyle}"
@@ -49,6 +50,7 @@
                                     <Label
                                         Grid.Column="2"
                                         HorizontalOptions="Start"
+                                        VerticalOptions="Center"
                                         HeightRequest="30"
                                         Style="{StaticResource DefaultLabelStyle}">
                                         <Label.Text>
@@ -70,12 +72,52 @@
             Margin="0,30,30,0"
             Grid.Column="1"
             Spacing="35">
+            <HorizontalStackLayout
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                Spacing="15">
+                <Label
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Style="{StaticResource DefaultLabelStyle}"
+                    FontSize="40"
+                    Text="Item Form"/>
+                <Border 
+                    HeightRequest="20"
+                    WidthRequest="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="#4cb19f"
+                    StrokeThickness="1" 
+                    Background="#4cb19f">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InventoryViewModel}}, Path=DisplayHelpCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Label
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="?"
+                        FontAttributes="Bold"
+                        TextColor="#25207a"/>
+                </Border>
+            </HorizontalStackLayout>
             <Grid
                 ColumnDefinitions="200,*">
-                <Label
-                    Style="{StaticResource DefaultLabelStyle}"
-                    HorizontalOptions="Start"
-                    Text="Item Name"/>
+                <HorizontalStackLayout
+                        Grid.Column="0">
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        HorizontalOptions="Start"
+                        Text="Item Name"/>
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        FontSize="Micro"
+                        Text=" *"/>
+                </HorizontalStackLayout>
                 <Entry
                     Grid.Column="1"
                     x:Name="ItemNameEntry"
@@ -100,10 +142,17 @@
 
             <Grid
                 ColumnDefinitions="200,*">
-                <Label
-                    Style="{StaticResource DefaultLabelStyle}"
-                    HorizontalOptions="Start"
-                    Text="Unit Measurement"/>
+                <HorizontalStackLayout
+                        Grid.Column="0">
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        HorizontalOptions="Start"
+                        Text="Unit Measurement"/>
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        FontSize="Micro"
+                        Text=" *"/>
+                </HorizontalStackLayout>
                 <Entry
                     Grid.Column="1"
                     x:Name="UnitMeasurementEntry"
@@ -113,10 +162,17 @@
 
             <Grid
                 ColumnDefinitions="200,*">
-                <Label
-                    Style="{StaticResource DefaultLabelStyle}"
-                    HorizontalOptions="Start"
-                    Text="Unit Cost"/>
+                <HorizontalStackLayout
+                        Grid.Column="0">
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        HorizontalOptions="Start"
+                        Text="Unit Cost"/>
+                    <Label
+                        Style="{StaticResource DefaultLabelStyle}"
+                        FontSize="Micro"
+                        Text=" *"/>
+                </HorizontalStackLayout>
                 <Entry
                     Grid.Column="1"
                     x:Name="UnitCostEntry"

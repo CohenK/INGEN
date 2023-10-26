@@ -279,3 +279,15 @@ C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SQ
 C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.nativelibrary.dll
 C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
 C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\HarfBuzzSharp.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Win32.SystemEvents.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\QuestPDF.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SkiaSharp.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\SkiaSharp.HarfBuzz.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\System.Drawing.Common.dll
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\libHarfBuzzSharp.h
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\Info.plist
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\module.modulemap
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\CodeResources
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\libHarfBuzzSharp
+C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-ios\iossimulator-x64\libSkiaSharp

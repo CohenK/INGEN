@@ -1053,3 +1053,12 @@ C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.nativelibrary.dll
 C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\HarfBuzzSharp.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\HarfBuzzSharp.pdb
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\Microsoft.Win32.SystemEvents.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\QuestPDF.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SkiaSharp.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SkiaSharp.HarfBuzz.dll
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SkiaSharp.HarfBuzz.pdb
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\SkiaSharp.pdb
+C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-android\android\assets\System.Drawing.Common.dll

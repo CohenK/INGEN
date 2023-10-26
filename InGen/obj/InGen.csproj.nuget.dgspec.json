@@ -98,6 +98,14 @@
               "version": "[7.0.86, )",
               "autoReferenced": true
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.10.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -228,6 +236,14 @@
               "version": "[7.0.86, )",
               "autoReferenced": true
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.10.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.8.116, )"
@@ -302,6 +318,14 @@
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.10.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -394,6 +418,14 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.10.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

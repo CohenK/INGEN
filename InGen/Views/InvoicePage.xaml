@@ -1,8 +1,399 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:InGen.ViewModels"
+             xmlns:model="clr-namespace:InGen.Models"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel: InventoryViewModel"
              x:Class="InGen.Views.InvoicePage"
              Title="Invoice Page"
              Style="{StaticResource CustomContentPage}">
+
+    <Grid
+        ColumnDefinitions="3*, 3*, 2*">
+        <Grid
+            RowDefinitions="50,*">
+        <Label
+            Grid.Row="0"
+            Style="{StaticResource DefaultLabelStyle}"
+            FontSize="40"
+            Text="Inventory Items"/>
+        <Border
+            Grid.Row="1"
+            Stroke="{StaticResource BorderGradient}"
+            StrokeThickness="5"
+            Margin="30,10,15,30">
+            <CollectionView
+            Grid.Column="0"
+            ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Item">
+                        <Grid
+                            Padding="10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=AddToInvoiceCommand}"/>
+                            </Grid.GestureRecognizers>
+                            <Border
+                                Padding="10">
+                                <Grid
+                                    ColumnDefinitions="180, 150"
+                                    ColumnSpacing="15"
+                                    HeightRequest="30">
+                                        <Label
+                                        Grid.Column="0"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        HeightRequest="30"
+                                        LineBreakMode="TailTruncation"
+                                        Style="{StaticResource DefaultLabelStyle}"
+                                        Text="{Binding name}"/>
+                                        <Label
+                                        Grid.Column="1"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        HeightRequest="30"
+                                        Style="{StaticResource DefaultLabelStyle}">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat='{}{0:C2}/{1}'>
+                                                <Binding Path="unitPrice"/>
+                                                <Binding Path="unitName"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+        </Grid>
+
+        <Grid
+            Grid.Column="1"
+            RowDefinitions="50,*">
+            <HorizontalStackLayout
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                Spacing="15">
+                <Label
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Style="{StaticResource DefaultLabelStyle}"
+                    FontSize="40"
+                    Text="Invoice Items"/>
+                <Border 
+                    HeightRequest="20"
+                    WidthRequest="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="#4cb19f"
+                    StrokeThickness="1" 
+                    Background="#4cb19f">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=DisplayInvoiceItemsHelpCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Label
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="?"
+                        FontAttributes="Bold"
+                        TextColor="#25207a"/>
+                </Border>
+            </HorizontalStackLayout>
+            <Border
+            Grid.Row="1"
+            Stroke="{StaticResource BorderGradient}"
+            StrokeThickness="5"
+            Margin="30,10,15,30">
+                <VerticalStackLayout
+                Margin="10"
+                Spacing="15">
+                    <CollectionView
+                    Grid.Column="0"
+                    ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=ItemsSold}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:ItemSold">
+                                <Grid
+                                    ColumnDefinitions="40,*,70,80"
+                                    ColumnSpacing="10">
+                                    <Border 
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        StrokeShape="RoundRectangle 2,2,2,2"
+                                        Stroke="#4cb19f"
+                                        StrokeThickness="1" 
+                                        Background="#4cb19f">
+                                        <Border.GestureRecognizers>
+                                            <TapGestureRecognizer 
+                                                CommandParameter="{Binding .}" 
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=RemoveItemCommand}"/>
+                                        </Border.GestureRecognizers>
+                                        <Label
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            VerticalTextAlignment="Center"
+                                            HorizontalTextAlignment="Center"
+                                            Text="X"
+                                            FontAttributes="Bold"
+                                            TextColor="#25207a"/>
+                                    </Border>
+                                    <Label
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        Grid.Column="1"
+                                        Style="{StaticResource DefaultLabelStyle}"
+                                        Text="{Binding Name}"/>
+                                    <Entry
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        WidthRequest="70"
+                                        Grid.Column="2"
+                                        BackgroundColor="White"
+                                        Text="{Binding Path = Value, Mode=TwoWay, Source={x:Reference AmountStepper}}">
+                                        <Entry.Behaviors>
+                                            <toolkit:NumericValidationBehavior 
+                                                InvalidStyle="{StaticResource InvalidEntryStyle}"
+                                                ValidStyle="{StaticResource ValidEntryStyle}"
+                                                MinimumValue = "1"
+                                                Flags="ValidateOnValueChanged"
+                                                MaximumDecimalPlaces="0"/>
+                                        </Entry.Behaviors>
+                                    </Entry>
+                                    <Stepper
+                                        HorizontalOptions="Start"
+                                        Grid.Column="3"
+                                        x:Name="AmountStepper"
+                                        Value="{Binding Amount}"
+                                        Increment="1"
+                                        Minimum="1"
+                                        Maximum="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=inf}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+
+        <Grid
+            Grid.Column="2"
+            RowSpacing="15"
+            RowDefinitions="50,3*,2*,50"
+            Margin="15,5,30,30"
+            VerticalOptions="Start">
+            <HorizontalStackLayout
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                Spacing="15">
+                <Label
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Style="{StaticResource DefaultLabelStyle}"
+                    FontSize="40"
+                    Text="Invoice Details"/>
+                <Border 
+                    HeightRequest="20"
+                    WidthRequest="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="#4cb19f"
+                    StrokeThickness="1" 
+                    Background="#4cb19f">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=DisplayDetailsItemsHelpCommand}"/>
+                    </Border.GestureRecognizers>
+                    <Label
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="?"
+                        FontAttributes="Bold"
+                        TextColor="#25207a"/>
+                </Border>
+            </HorizontalStackLayout>
+            <Grid
+                Grid.Row="1"
+                RowDefinitions="50,*,*,*,*,*"
+                RowSpacing="12">
+                <Label
+                    Grid.Row="0"
+                    Style="{StaticResource DefaultLabelStyle}"
+                    FontSize="25"
+                    HorizontalOptions="Start"
+                    Text="Bill To:"/>
+                <Grid
+                    Grid.Row="1"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <HorizontalStackLayout
+                        Grid.Column="0">
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            HorizontalOptions="Start"
+                            Text="Name"/>
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            FontSize="Micro"
+                            Text=" *"/>
+                    </HorizontalStackLayout>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=CustomerName}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="2"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <HorizontalStackLayout
+                        Grid.Column="0">
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            HorizontalOptions="Start"
+                            Text="Address"/>
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            FontSize="Micro"
+                            Text=" *"/>
+                    </HorizontalStackLayout>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=CustomerAddress}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="3"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <HorizontalStackLayout
+                        Grid.Column="0">
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            HorizontalOptions="Start"
+                            Text="City"/>
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            FontSize="Micro"
+                            Text=" *"/>
+                    </HorizontalStackLayout>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=CustomerCity}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="4"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <HorizontalStackLayout
+                        Grid.Column="0">
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            HorizontalOptions="Start"
+                            Text="State"/>
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            FontSize="Micro"
+                            Text=" *"/>
+                    </HorizontalStackLayout>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=CustomerState}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="5"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <HorizontalStackLayout
+                        Grid.Column="0">
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            HorizontalOptions="Start"
+                            Text="Zipcode"/>
+                        <Label
+                            Style="{StaticResource DefaultLabelStyle}"
+                            FontSize="Micro"
+                            Text=" *"/>
+                    </HorizontalStackLayout>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=CustomerZip}"/>
+                </Grid>
+            </Grid>
+            <Grid
+                Grid.Row="2"
+                RowDefinitions="50,*,*,*"
+                RowSpacing="12">
+                <Label
+                    Grid.Row="0"
+                    Style="{StaticResource DefaultLabelStyle}"
+                    FontSize="25"
+                    HorizontalOptions="Start"
+                    Text="Other Details:"/>
+                <Grid
+                    Grid.Row="1"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <Label
+                        Grid.Column="0"
+                        Style="{StaticResource DefaultLabelStyle}"
+                        HorizontalOptions="Start"
+                        Text="Invoice #"/>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=InvoiceNum}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="2"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <Label
+                        HorizontalOptions="Start"
+                        Grid.Column="0"
+                        Style="{StaticResource DefaultLabelStyle}"
+                        Text="Discount"/>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=Discount}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="3"
+                    ColumnDefinitions="*,2*"
+                    MaximumHeightRequest="40">
+                    <Label
+                        HorizontalOptions="Start"
+                        Grid.Column="0"
+                        Style="{StaticResource DefaultLabelStyle}"
+                        Text="File Name"/>
+                    <Entry
+                        Grid.Column="1"
+                        Style="{StaticResource DefaultEntryStyle}"
+                        Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=FileName}"
+                        Placeholder="(Name+Invoice#)"/>
+                </Grid>
+            </Grid>
+            <Button
+                Grid.Row="3"
+                VerticalOptions="End"
+                Style="{StaticResource CustomButtonStyle}"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:InvoiceViewModel}}, Path=GetInvoiceCommand}"
+                Text="Generate Invoice"/>
+        </Grid>
+
+    </Grid>
 
 </ContentPage>

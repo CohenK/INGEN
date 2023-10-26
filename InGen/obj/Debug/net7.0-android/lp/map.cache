@@ -160,3 +160,5 @@ CommunityToolkit.Maui.dll
 CommunityToolkit.Maui.Core.aar
 CommunityToolkit.Maui.aar
 SQLitePCLRaw.lib.e_sqlite3.android.dll
+HarfBuzzSharp.dll
+SkiaSharp.dll

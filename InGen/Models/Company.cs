@@ -12,14 +12,14 @@ namespace InGen.Models
         private string address;
         private string city;
         private string state;
-        private int zipCode;
+        private string zipCode;
         private double tax;
 
         public Company(string name = "not provided",
             string address = "not provided",
             string city = "not provided",
             string state = "",
-            int zip = 0,
+            string zip = "",
             double tax = 0.0)
         {
             Name = name;
@@ -30,10 +30,10 @@ namespace InGen.Models
             Tax = tax;
         }
 
-        public Company() : this("not provided", "not provided", "not provided", "", 0, 0.0) { }
+        public Company() : this("not provided", "not provided", "not provided", "", "", 0.0) { }
 
 
-        public void UpdateCompany(string name, string address, string city, string state, int zipCode, double tax)
+        public void UpdateCompany(string name, string address, string city, string state, string zipCode, double tax)
         {
             Name = name;
             Address = address;
@@ -59,7 +59,7 @@ namespace InGen.Models
             Address = (string)info.GetValue("address", typeof(string));
             City = (string)info.GetValue("city", typeof(string));
             State = (string)info.GetValue("state", typeof(string));
-            ZipCode = (int)info.GetValue("zipcode", typeof(int));
+            ZipCode = (string)info.GetValue("zipcode", typeof(string));
             Tax = (double)info.GetValue("tax", typeof(double));
         }
 
@@ -84,7 +84,7 @@ namespace InGen.Models
             get { return state; }
             set { state = value; }
         }
-        public int ZipCode
+        public string ZipCode
         {
             get { return zipCode; }
             set { zipCode = value; }

@@ -1,22 +1,23 @@
-﻿using System.Xml.Serialization;
+﻿using InGen.Services;
+using System.Xml.Serialization;
 
 namespace InGen.Services
 {
-    public class CompanyService
+    public static class CompanyService
     {
         static string directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen");
-        //static string filePath = directory + "\\companyInfo.xml";
         static string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen", "CompanyInfo.xml");
-        private Company company;
-        private XmlSerializer serializer;
+        static private Company company;
+        static private XmlSerializer serializer;
 
-        public CompanyService()
+        public static void Init()
         {
             serializer = new XmlSerializer(typeof(Company));
         }
 
-        public Company GetCompany()
+        public static Company GetCompany()
         {
+            Init();
             if (!Directory.Exists(directory))
             {
                 DirectoryInfo resourceDirectory = new DirectoryInfo(directory);
@@ -40,8 +41,9 @@ namespace InGen.Services
             return company;
         }
 
-        public void SetCompany()
+        public static void SetCompany()
         {
+            Init();
             using (TextWriter writer = new StreamWriter(filePath))
             {
                 serializer.Serialize(writer, company);

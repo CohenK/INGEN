@@ -103,7 +103,7 @@
 
 
         <Grid
-            ColumnDefinitions="200, 550"
+            ColumnDefinitions="200, 550,50"
             HeightRequest="40"
             Margin="20">
             <Label 
@@ -125,6 +125,10 @@
                         MaximumValue="100.0"/>
                 </Entry.Behaviors>
             </Entry>
+            <Label
+                Grid.Column="2"
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="%"/>
         </Grid>
 
         <Button
@@ -137,25 +141,6 @@
             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CompanyViewModel}}, Path=UpdateCompanyCommand}"
             WidthRequest="400"
             HeightRequest="60"/>
-
-        <!--<Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.Name}"/>
-        <Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.Address}"/>
-        <Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.City}"/>
-        <Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.State}"/>
-        <Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.ZipCode}"/>
-        <Label 
-                Style="{StaticResource MyDefaultLabelStyle}"
-                Text="{Binding company.Tax}"/>-->
 
     </VerticalStackLayout>
 </ContentPage>

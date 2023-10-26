@@ -3,7 +3,6 @@
     public partial class BaseViewModel: ObservableObject
     {
         #region member variables
-
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         bool isBusy;
@@ -12,7 +11,6 @@
 
         [ObservableProperty]
         string title;
-
         #endregion
 
         public BaseViewModel() { }

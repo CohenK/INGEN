@@ -5,9 +5,7 @@ namespace InGen.ViewModels
 {
     public partial class CompanyViewModel : BaseViewModel
     {
-        //static string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-        CompanyService service;
+        static Page Page => Application.Current?.MainPage ?? throw new NullReferenceException();
         public Company company { get; set; }
 
         #region private vars
@@ -20,18 +18,17 @@ namespace InGen.ViewModels
         [ObservableProperty]
         private string state;
         [ObservableProperty]
-        private int zipCode;
+        private string zipCode;
         [ObservableProperty]
         private double tax;
         #endregion
 
-        public CompanyViewModel(CompanyService service)
+        public CompanyViewModel()
         {
-            this.service = service;
             company = new Company();
             try
             {
-                company = service.GetCompany();
+                company = CompanyService.GetCompany();
             }
             catch (Exception ex)
             {
@@ -51,15 +48,20 @@ namespace InGen.ViewModels
         }
 
         [RelayCommand]
-        public void UpdateCompany()
+        public async Task UpdateCompany()
         {
+            if (Tax < 0 || Tax > 100) 
+            { 
+                await Page.DisplayAlert("Alert", "Tax percentage should only be within the range of 0 to 100 inclusive", "OK"); 
+                return; 
+            }
             company.Name = Name;
             company.Address = Address;
             company.City = City;
             company.State = State;
             company.ZipCode = ZipCode;
             company.Tax = Tax;
-            service.SetCompany();
+            CompanyService.SetCompany();
         }
     }
 }

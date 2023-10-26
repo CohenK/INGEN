@@ -1,10 +1,11 @@
 ﻿using InGen.Services;
-using Windows.System.Update;
 
 namespace InGen.ViewModels
 {
     public partial class InventoryViewModel : BaseViewModel
     {
+        static Page Page => Application.Current?.MainPage ?? throw new NullReferenceException();
+
         #region private vars
         [ObservableProperty]
         private string name;
@@ -44,7 +45,7 @@ namespace InGen.ViewModels
         }
 
         [RelayCommand]
-        public void PopulateFields(Item item)
+        private void PopulateFields(Item item)
         {
             if (item == null)
             {
@@ -69,11 +70,16 @@ namespace InGen.ViewModels
         }
 
         [RelayCommand]
-        public async Task AddItem()
+        private async Task AddItem()
         {
             if (Name == null || UnitName == null || UnitPrice == null)
             {
-                ClearFields();
+                await Page.DisplayAlert("Alert", "One or more fields in the item form is empty", "OK");
+                return;
+            }
+            if ((double)UnitPrice < 0.0)
+            {
+                await Page.DisplayAlert("Alert", "Unit Price must be non-negative", "OK");
                 return;
             }
             await InventoryService.Init();
@@ -88,11 +94,11 @@ namespace InGen.ViewModels
         }
 
         [RelayCommand]
-        public async Task EditItem()
+        private async Task EditItem()
         {
             if (Name == null || UnitName == null || UnitPrice == null || Id is null)
             {
-                ClearFields();
+                await Page.DisplayAlert("Alert", "One or more fields in the item form is empty", "OK");
                 return;
             }
             Item item = new Item();
@@ -107,11 +113,11 @@ namespace InGen.ViewModels
         }
 
         [RelayCommand]
-        public async Task RemoveItem()
+        private async Task RemoveItem()
         {
             if (Name == null || UnitName == null || UnitPrice == null || Id is null)
             {
-                ClearFields();
+                await Page.DisplayAlert("Alert", "Please select an item from the list to delete", "OK");
                 return;
             }
             await InventoryService.Init();
@@ -120,6 +126,13 @@ namespace InGen.ViewModels
             await GetItems();
         }
 
+        [RelayCommand]
+        private async Task DisplayHelp()
+        {
+            await Page.DisplayAlert("Help",
+                "Items marked with a * is required and the item will not be added unless valid values are entered.\n" +
+                "Additionally, unit cost must not be negative.", "OK");
+        }
 
     }
 }

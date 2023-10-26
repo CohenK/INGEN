@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-20T03:45:32.813</Modified>
+      <Modified>2023-10-26T22:29:11.216</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-20T03:34:00.421</Modified>
+      <Modified>2023-10-26T22:29:10.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.runtimeconfig.json">
       <PackagePath>InGen.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-17T22:14:28.346</Modified>
+      <Modified>2023-10-24T21:04:37.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.dll">
       <PackagePath>InGen.dll</PackagePath>
-      <Modified>2023-10-20T03:45:31.699</Modified>
+      <Modified>2023-10-26T22:29:09.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>InGen.exe</PackagePath>
-      <Modified>2023-10-20T03:45:31.705</Modified>
+      <Modified>2023-10-26T22:29:09.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -817,6 +817,10 @@
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
       <Modified>2023-07-05T18:52:50.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\harfbuzzsharp\7.3.0\lib\net6.0\HarfBuzzSharp.dll">
+      <PackagePath>HarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:30.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-10-18T16:15:22.000</Modified>
@@ -864,6 +868,10 @@
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.86\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2023-04-25T16:34:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.win32.systemevents\7.0.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2022-10-18T16:17:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -921,6 +929,18 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\questpdf\2023.10.0\lib\net6.0\QuestPDF.dll">
+      <PackagePath>QuestPDF.dll</PackagePath>
+      <Modified>2023-10-23T22:38:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\skiasharp\2.88.6\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\skiasharp.harfbuzz\2.88.6\lib\net6.0\SkiaSharp.HarfBuzz.dll">
+      <PackagePath>SkiaSharp.HarfBuzz.dll</PackagePath>
+      <Modified>2023-09-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
       <PackagePath>SQLite-net.dll</PackagePath>
       <Modified>2021-09-02T21:04:32.000</Modified>
@@ -941,9 +961,17 @@
       <PackagePath>SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
       <Modified>2020-09-03T17:13:18.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\system.drawing.common\7.0.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2022-10-18T16:17:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\system.speech\7.0.0\runtimes\win\lib\net7.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
       <Modified>2022-10-18T16:18:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\harfbuzzsharp.nativeassets.win32\7.3.0\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>libHarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -953,13 +981,17 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\skiasharp.nativeassets.win32\2.88.6\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:38.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
       <PackagePath>e_sqlite3.dll</PackagePath>
       <Modified>2020-08-17T14:38:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cohen\source\repos\INGEN\InGen\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\InGen.deps.json">
       <PackagePath>InGen.deps.json</PackagePath>
-      <Modified>2023-10-20T03:45:32.709</Modified>
+      <Modified>2023-10-26T22:29:11.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

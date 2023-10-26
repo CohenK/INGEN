@@ -32,7 +32,7 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<FrontPageViewModel>();
 
-        builder.Services.AddSingleton<CompanyService>();
+        //builder.Services.AddSingleton<CompanyService>();
         builder.Services.AddTransient<CompanyViewModel>();
 
         //builder.Services.AddSingleton<InventoryService>();
