@@ -6,7 +6,7 @@
              x:Class="InGen.MainPage"
              Title="FrontPage"
              Style="{StaticResource CustomContentPage}"
-             NavigationPage.HasNavigationBar="False">
+             Shell.NavBarIsVisible="False">
 
     <VerticalStackLayout
         VerticalOptions="Center"

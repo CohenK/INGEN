@@ -5,8 +5,8 @@ namespace InGen.Services
 {
     public static class CompanyService
     {
-        static string directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen");
-        static string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen", "CompanyInfo.xml");
+        static string directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "InGen","CompanyInfo");
+        static string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "InGen","CompanyInfo", "CompanyInfo.xml");
         static private Company company;
         static private XmlSerializer serializer;
 

@@ -11,7 +11,6 @@ namespace InGen.Services
     {
         private Invoice invoice { get; set; }
 
-
         public PDFService(Invoice invoice) 
         {
             this.invoice = invoice;
@@ -30,7 +29,6 @@ namespace InGen.Services
                 page.Footer().Element(ComposeFooter);
             });
         }
-
         public void ComposeHeader(QuestPDF.Infrastructure.IContainer container)
         {
             var invoiceStyle = TextStyle.Default.FontSize(15).SemiBold().FontColor("#4b438e");

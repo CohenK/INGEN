@@ -10,8 +10,8 @@ namespace InGen.Models
     public class Invoice
     {
         #region vars
-        private int invoiceNo;
-        public int InvoiceNo
+        private string invoiceNo;
+        public string InvoiceNo
         {
             get { return invoiceNo; }
             set { invoiceNo = value; }
@@ -72,10 +72,11 @@ namespace InGen.Models
         }
         #endregion
 
-        public Invoice(int invNo, Company customer, DateTime dueDate, ObservableCollection<ItemSold> items, DateTime? issueDate = null, double discount = 0)
+        public Invoice(string invNo, Company customer, DateTime dueDate, ObservableCollection<ItemSold> items, DateTime? issueDate = null, double discount = 0)
         {
             Company = CompanyService.GetCompany();
             Customer = customer;
+            InvoiceNo = invNo;
             if (issueDate is null)
             {
                 IssueDate = DateTime.Now.ToShortDateString();

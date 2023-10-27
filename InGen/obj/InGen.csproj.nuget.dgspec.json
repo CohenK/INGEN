@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj": {}
+    "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\InGen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj": {
+    "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\InGen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj",
+        "projectUniqueName": "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\InGen.csproj",
         "projectName": "InGen",
-        "projectPath": "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj",
+        "projectPath": "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\InGen.csproj",
         "packagesPath": "C:\\Users\\cohen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\obj\\",
+        "outputPath": "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

@@ -110,14 +110,18 @@ namespace InGen.ViewModels
                 return; 
             }
 
-            int realInvoiceNo;
-            if (!int.TryParse(InvoiceNum, out realInvoiceNo)){
+            if (!int.TryParse(InvoiceNum, out _)){
                 await Page.DisplayAlert("Alert", "Invoice # can only be an integer", "OK");
                 return;
             }
             string invoiceFileName = CustomerName + "#" + InvoiceNum + ".pdf";
             if (!string.IsNullOrEmpty(FileName)) { invoiceFileName = FileName + ".pdf"; }
-            string pdf = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen", invoiceFileName);
+
+            string dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "InGen", "Invoices");
+            if (!Directory.Exists(dir)) { Directory.CreateDirectory(dir); }
+
+            string pdf = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "InGen", "Invoices", invoiceFileName);
+
             bool answer;
             if (File.Exists(pdf))
             {
@@ -136,7 +140,7 @@ namespace InGen.ViewModels
                 ZipCode = CustomerZip
             };
 
-            Invoice InvoiceData = new Invoice(realInvoiceNo, invoiceCustomer, DateTime.Today, ItemsSold, discount: Discount);
+            Invoice InvoiceData = new Invoice(InvoiceNum, invoiceCustomer, DateTime.Today, ItemsSold, discount: Discount);
 
             var doc = new PDFService(InvoiceData);
             try
@@ -146,6 +150,7 @@ namespace InGen.ViewModels
             catch (Exception ex)
             {
                 await Page.DisplayAlert("Alert", "Unable to generate the invoice", "OK");
+                await Page.DisplayAlert("Alert", ex.Message, "OK");
             }
             ClearInvoice();
         }

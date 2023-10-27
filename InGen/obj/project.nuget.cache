@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0SaMsEIrvAe1Ovqgr9PZBs6fflMEChVvqckDZruIq1gUTW4oQ5o9zWdu6vNMsg7lQmvGcuPnnY4I0eM5JNoH3w==",
+  "dgSpecHash": "SYTG7UGhtRMESxCG0lHHC7DSrTwn2HoVRqdw+uXNVH9zL9V6JNIPa9l/7LRd6js27yl4eqL9yWyQfqo2vDE1tQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cohen\\source\\repos\\INGEN\\InGen\\InGen.csproj",
+  "projectFilePath": "C:\\Users\\cohen\\source\\repos\\InGen\\InGen\\InGen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui\\6.0.0\\communitytoolkit.maui.6.0.0.nupkg.sha512",
     "C:\\Users\\cohen\\.nuget\\packages\\communitytoolkit.maui.core\\6.0.0\\communitytoolkit.maui.core.6.0.0.nupkg.sha512",

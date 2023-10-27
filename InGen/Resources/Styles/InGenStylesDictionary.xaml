@@ -27,18 +27,44 @@
     <Style 
         x:Key="CustomButtonStyle" 
         TargetType="Button">
-        <Setter
-            Property="BackgroundColor"
-            Value="#4cb19f"/>
-        <Setter
-            Property="TextColor"
-            Value="#25207a"/>
-        <Setter
-            Property="FontAttributes"
-            Value="Bold"/>
-        <Setter
-            Property="FontSize"
-            Value="20"/>
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter
+                                Property="BackgroundColor"
+                                Value="#4cb19f"/>
+                            <Setter
+                                Property="TextColor"
+                                Value="#25207a"/>
+                            <Setter
+                                Property="FontAttributes"
+                                Value="Bold"/>
+                            <Setter
+                                Property="FontSize"
+                                Value="20"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter
+                                Property="BackgroundColor"
+                                Value="#25207a"/>
+                            <Setter
+                                Property="TextColor"
+                                Value="#4cb19f"/>
+                            <Setter
+                                Property="FontAttributes"
+                                Value="Bold"/>
+                            <Setter
+                                Property="FontSize"
+                                Value="20"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
     </Style>
 
     <LinearGradientBrush

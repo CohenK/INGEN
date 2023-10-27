@@ -8,7 +8,7 @@ namespace InGen.Services
         public static async Task Init()
         {
             if (db != null) return;
-            var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "InGen","Inventory.db");
+            var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "InGen", "CompanyInfo", "Inventory.db");
             db = new SQLiteAsyncConnection(databasePath);
 
             await db.CreateTableAsync<Item>();
